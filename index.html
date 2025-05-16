@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LITMIND</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel = "stylesheet" href = "css/styles.css" />
+</head>
+<body>
+    <!-- Header -->
+     <header>
+        <div class = "header__top">
+            <button class = "header__menu-btn" aria-label = "Open menu">
+                <img src = "img/icons/Menu.svg" alt = "menu" />
+            </button>
+            <a href = "#" class = "header__logo">Litmind</a>
+            <button class = "header__cart-btn" aria-label = "Cart">
+                <img src = "img/icons/Cart.svg" alt = "cart" />
+            </button>
+        </div>
+
+        <div class = "header__bottom">
+            <button class = "header__catalogue-btn">
+                <img src = "img/icons/Catalog.svg" alt = "catalogue" />
+                <span class="header__catalogue-text">Catalogue</span>
+            </button>
+        </div>
+     </header>
+
+     <main>
+        <section class = "promo">
+            <div class = "promo__text">
+                <span class = "promo__label">Litmind</span>
+                <h1 class = "promo__title">
+                    EXCLUSIVE COOKBOOKS<br>
+                    <span class="promo__title-highlight">JUST FOR YOU</span> – ONE PURCHASE, ONE OWNER!
+                </h1>
+                <p class = "promo__description">
+                    Get a unique, AI-crafted cookbook, sold just once and instantly delivered to your inbox in docx and PDF.
+                    <br><strong>Ready to publish on Amazon.</strong>
+                </p>
+            </div>
+
+            <img src = "img/books-promo.svg" alt = "books-promo" />
+
+            <div class="promo__categories">
+                <div class="promo__category">
+                    <p class="promo__category-title">Diet cookbooks</p>
+                    <img src="img/book-promo-category.svg" alt="Diet category" class="promo__category-img" loading="lazy" />
+                </div>
+                <div class="promo__category">
+                    <p class="promo__category-title">Kitchen Appliances cookbooks</p>
+                    <img src="img/book-promo-category.svg" alt="Kitchen appliances category" class="promo__category-img" loading="lazy" />
+                </div>
+                <div class="promo__category">
+                    <p class="promo__category-title">Regional cookbooks</p>
+                    <img src="img/book-promo-category.svg" alt="Regional category" class="promo__category-img" loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <section class = "books">
+            <h2 class = "books__title">Recent books added</h2>
+
+            <div class = "books__grid">
+                <article class = "book-card">
+                    <div class = "book-card__images">
+                        <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image" />
+                        <div class = "book-card__labels">
+                            <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" />
+                            <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" />
+                            <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" />
+                        </div>
+                    </div>
+
+                    <h3 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h3>
+
+                    <div class = "book-card__price">
+                        <span class = "book-card__price--current">$40</span>
+                        <span class = "book-card__price--old">$50</span>
+                    </div>
+
+                    <button class = "book-card__btn" aria-label = "Add to bag">
+                        ADD TO BAG
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon" />
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <section class = "popular-books">
+            <h2 class = "books__title">Are most likely to interest you</h2>
+
+            <div class = "books__grid">
+                <article class = "book-card">
+                    <div class = "book-card__images">
+                        <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image" />
+                        <div class = "book-card__labels">
+                            <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" />
+                            <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" />
+                            <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" />
+                        </div>
+                    </div>
+
+                    <h3 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h3>
+
+                    <div class = "book-card__price">
+                        <span class = "book-card__price--current">$40</span>
+                        <span class = "book-card__price--old">$50</span>
+                    </div>
+
+                    <button class = "book-card__btn" aria-label = "Add to bag">
+                        ADD TO BAG
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon" />
+                    </button>
+                </article>
+            </div>
+
+            <button class = "popular-books__btn">
+                To the catalogue
+                <img src = "img/icons/Arrow.svg" alt = "Countinue" />
+            </button>
+        </section>
+     </main>
+
+     <footer>
+        <div class = "footer__top">
+            <div class = "footer__logo-lang">
+                <span class = "footer__title">Litmind</span>
+                <div class = "footer__lang-switch">
+                    <button class = "footer__lang-btn">En</button>
+                    <button class = "footer__lang-btn">Ua</button>
+                </div>
+            </div>
+
+            <div class = "footer__columns">
+                <div class = "footer__column footer__column--catalogue">
+                    <h3 class = "footer__heading">Catalogue</h3>
+                    <ul class = "footer__list">
+                        <li><a href = "#" class = "footer__link">Diet Cookbooks</a></li>
+                        <li><a href = "#" class = "footer__link">Kitchen Appliances Cookbooks</a></li>
+                        <li><a href = "#" class = "footer__link">Regional Cookbooks</a></li>
+                        <li><a href = "#" class = "footer__link">Others Cookbooks</a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer__column footer__column--info">
+                    <h3 class = "footer__heading">Information</h3>
+                    <ul class = "footer__list">
+                        <li><a href = "#" class = "footer__link">Warranty</a></li>
+                        <li><a href = "#" class = "footer__link">Payment</a></li>
+                        <li><a href = "#" class = "footer__link">Contacts</a></li>
+                        <li><a href = "#" class = "footer__link">Refund policy</a></li>
+                        <li><a href = "#" class = "footer__link">Return policy</a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer__column footer__column--contacts">
+                    <h3 class = "footer__heading">Contacts</h3>
+                    <ul class = "footer__list">
+                        <li><a href = "#" class = "footer__link">WhatsApp</a></li>
+                        <li><a href = "#" class = "footer__link">Telegram</a></li>
+                        <li><a href = "#" class = "footer__link">Viber</a></li>
+                    </ul>
+                    <p class = "footer__text">+38 093 123 45 67</p>
+                    <p class = "footer__text">email@email.com</p>
+                </div>
+            </div>
+
+            <div class = "footer__payments">
+                <img src = "img/payments/visa-payment.svg" alt = "Visa" class = "footer__payment-icon" />
+                <img src = "img/payments/mastercard-payment.svg" alt = "Mastercard SecureCode" class = "footer__payment-icon" />
+                <img src = "img/payments/apple-payment.svg" alt = "Apple Pay" class = "footer__payment-icon" />
+                <img src = "img/payments/google-payment.svg" alt = "Google Pay" class = "footer__payment-icon" />
+            </div>
+
+            <button class = "footer__contact-btn" type = "button">Contact Us</button>
+        </div>
+
+        <div class = "footer__bottom">
+            <div class = "footer__optional-links">
+                <a href = "#" class = "footer__optional-link">Privacy policy</a>
+                <a href = "#" class = "footer__optional-link">Contract offer</a>
+            </div>
+
+            <p class = "footer__copyright">© 2025. <strong>All rights reserved.</strong></p>
+            <p class = "footer__notice">Copying of materials and content of the site is permitted only with the consent of the resource owner.</p>
+
+            <div class = "footer__dev">
+                <small>development and design:</small>
+                <img src = "img/tempus-logo.svg" alt = "Tempus logo" class = "footer__dev-logo" />
+            </div>
+        </div>
+     </footer>
+</body>
+</html>
