@@ -1,0 +1,157 @@
+/* Base */
+
+:root {
+    --yellow-color: #F4F015;
+    --gray-color: #AFAFAF14;
+    --black-color: #010101;
+}
+
+@font-face {
+  font-family: 'BlenderPro';
+  src: url('../fonts/BlenderPro-Heavy.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BlenderPro';
+  src: url('../fonts/BlenderPro-Medium.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu-btn,
+.header__cart-btn {
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.header__logo {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: var(--black-color);
+}
+
+.header__catalogue-btn {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--yellow-color);
+    border-radius: 14px;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header__catalogue-text {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--black-color);
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 0.5rem;
+}
+
+.promo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.promo__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo__label {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #9B9B9B;
+}
+
+.promo__title {
+    text-align: center;
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--black-color);
+}
+
+.promo__title-highlight {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #9B9B9B;
+}
+
+
+.promo__description {
+    text-align: center;
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black-color);
+}
+
+.promo__description-highlight {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--black-color);
+}
+
+
+.promo__categories {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.promo__category {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F6F6F6;
+    border-radius: 16px;
+    padding-top: 1rem;
+}
+
+.promo__category-title {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--black-color);
+}
