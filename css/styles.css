@@ -80,6 +80,8 @@ main {
     padding: 0rem 0.5rem;
 }
 
+/* Promo */
+
 .promo {
     display: flex;
     flex-direction: column;
@@ -130,6 +132,7 @@ main {
     color: var(--black-color);
 }
 
+/* Categories */
 
 .promo__categories {
     display: flex;
@@ -144,14 +147,274 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 0 0 auto;
     background-color: #F6F6F6;
     border-radius: 16px;
-    padding-top: 1rem;
+    padding: 1rem 1rem 0rem;
 }
 
 .promo__category-title {
     font-family: 'BlenderPro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black-color);
+}
+
+/* Catalog */
+
+.books {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.books__title {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--black-color);
+}
+
+.books__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+}
+
+.book-card,
+.book-card__link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-card__images {
+  position: relative;
+}
+
+.book-card__labels {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  pointer-events: none; 
+}
+
+.book-card__labels-left {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.book-card__labels-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.book-card__title {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black-color);
+}
+
+.book-card__price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.book-card__price--current {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--black-color);
+}
+
+.book-card__price--old {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 4px;
+    font-family: 'BlenderPro', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    color: var(--black-color);
+    text-decoration: line-through;
+}
+
+.book-card__btn {
+    display: flex;
+    justify-content: space-between;
+    background-color: #AFAFAF14;
+    border-radius: 10px;
+    padding: 16px 10px;
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.section-divider {
+    border: none;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Popular */
+
+.popular-books {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.popular-books__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--black-color);
+    border-radius: 14px;
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+.footer__top {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer__logo-lang {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer__title {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--black-color);
+}
+
+.footer__lang-btn {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black-color);
+}
+
+.footer__columns {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: stretch;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.footer__heading {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--black-color);
+}
+
+.footer__list {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black-color);
+    flex-grow: 1;
+    padding: 0px;
+}
+
+.footer__text {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black-color);
+}
+
+.footer__payments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem; 
+  flex-wrap: wrap; 
+  padding: 1rem 0;
+}
+
+.footer__contact-btn {
+    background-color: var(--black-color);
+    border-radius: 14px;
+    padding: 1rem 3rem;
+    width: 60%;
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+}
+
+.footer__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__optional-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__optional-link {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--black-color);
+}
+
+.footer__copyright {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--black-color);
+}
+
+.footer__notice {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 250;
+    font-size: 14px;
+    color: var(--black-color);
+}
+
+.footer__dev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
     color: var(--black-color);
 }
