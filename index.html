@@ -4,26 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LITMIND</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel = "stylesheet" href = "css/styles.css" />
+    <link rel = "preload" as = "font" href = "fonts/BlenderPro-Heavy.woff2" type = "font/woff2" crossorigin>
+    <link rel = "preload" as = "font" href = "fonts/BlenderPro-Medium.woff2" type = "font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel = "stylesheet" href = "css/styles.css">
 </head>
 <body>
     <!-- Header -->
      <header>
-        <div class = "header__top">
-            <button class = "header__menu-btn" aria-label = "Open menu">
-                <img src = "img/icons/Menu.svg" alt = "menu" />
-            </button>
+        <div class = "header__side-first">
+            <div class = "header__buttons">
+                <button class = "header__menu-btn" aria-label = "Open menu">
+                    <img src = "img/icons/Menu.svg" alt = "menu">
+                </button>
+
+                <button class = "header__catalogue-btn">
+                    <img src = "img/icons/Catalog.svg" alt = "catalogue">
+                    <span class = "header__catalogue-text">Catalogue</span>
+                </button>
+
+                <button class = "header__search-btn">
+                    <img src = "img/icons/Search.svg" alt = "catalogue">
+                    <span class = "header__search-text">Search</span>
+                </button>
+            </div>
+            
             <a href = "#" class = "header__logo">Litmind</a>
-            <button class = "header__cart-btn" aria-label = "Cart">
-                <img src = "img/icons/Cart.svg" alt = "cart" />
-            </button>
+
+            <div class = "header__buttons">
+                <button class = "header__profile-btn">
+                    <img src = "img/icons/Profile.svg" alt = "catalogue">
+                    <span class = "header__profile-text">Sign in</span>
+                </button>
+                <button class = "header__cart-btn" aria-label = "Cart">
+                    <img src = "img/icons/Cart.svg" alt = "cart">
+                    <span class = "header__cart-text">Cart</span>
+                </button>
+            </div>
         </div>
 
-        <div class = "header__bottom">
-            <button class = "header__catalogue-btn">
-                <img src = "img/icons/Catalog.svg" alt = "catalogue" />
-                <span class = "header__catalogue-text">Catalogue</span>
+        <div class = "header__side-second">
+            <button class = "header__second-catalogue-btn">
+                <img src = "img/icons/Catalog.svg" alt = "catalogue">
+                <span class = "header__second-catalogue-text">Catalogue</span>
             </button>
         </div>
      </header>
@@ -33,28 +56,36 @@
      <main>
         <!-- Promo -->
         <section class = "promo">
-            <div class = "promo__text">
-                <span class = "promo__label">Litmind</span>
-                <h1 class = "promo__title">EXCLUSIVE COOKBOOKS JUST FOR YOU<span class="promo__title-highlight"> – ONE PURCHASE, ONE OWNER!</span>
-                </h1>
-                <p class = "promo__description">Get a unique, AI-crafted cookbook, sold just once and instantly delivered to your inbox in docx and PDF.<span class="promo__description-highlight">Ready to publish on Amazon.</span>
-                </p>
-            </div>
+            <div class = "promo__main">
+                <img src = "img/book-promo2.svg" class = "promo__main-img1" alt = "books-promo">
 
-            <img src = "img/books-promo.svg" alt = "books-promo" />
+                <div class = "promo__text">
+                    <span class = "promo__label">Litmind</span>
+                    <h1 class = "promo__title">EXCLUSIVE COOKBOOKS JUST FOR YOU<span class="promo__title-highlight"> – ONE PURCHASE, ONE OWNER!</span>
+                    </h1>
+                    <p class = "promo__description">Get a unique, AI-crafted cookbook, sold just once and instantly delivered to your inbox in docx and PDF.<span class="promo__description-highlight">Ready to publish on Amazon.</span>
+                    </p>
+                </div>
+
+                <img src = "img/books-promo.svg" class = "promo__main-img2" alt = "books-promo">
+            </div>
 
             <div class="promo__categories">
                 <div class="promo__category">
                     <p class="promo__category-title">Diet cookbooks</p>
-                    <img src="img/book-promo-category.svg" alt="Diet category" class="promo__category-img" loading="lazy" />
+                    <img src="img/book-promo-category.svg" alt="Diet category" class="promo__category-img" loading="lazy">
                 </div>
                 <div class="promo__category">
                     <p class="promo__category-title">Kitchen Appliances cookbooks</p>
-                    <img src="img/book-promo-category.svg" alt="Kitchen appliances category" class="promo__category-img" loading="lazy" />
+                    <img src="img/book-promo-category.svg" alt="Kitchen appliances category" class="promo__category-img" loading="lazy">
                 </div>
                 <div class="promo__category">
                     <p class="promo__category-title">Regional cookbooks</p>
-                    <img src="img/book-promo-category.svg" alt="Regional category" class="promo__category-img" loading="lazy" />
+                    <img src="img/book-promo-category.svg" alt="Regional category" class="promo__category-img" loading="lazy">
+                </div>
+                <div class="promo__category">
+                    <p class="promo__category-title">Regional cookbooks</p>
+                    <img src="img/book-promo-category.svg" alt="Regional category" class="promo__category-img" loading="lazy">
                 </div>
             </div>
         </section>
@@ -68,15 +99,15 @@
                 <article class = "book-card">
                     <a href = "#" class = "book-card__link">
                         <div class = "book-card__images">
-                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image" />
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
 
                             <div class = "book-card__labels">
                                 <div class = "book-card__labels-left">
-                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" />
-                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" />
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
                                 </div>
                                 <div class = "book-card__labels-right">
-                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" />
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
                                 </div>
                             </div>
                         </div>
@@ -91,22 +122,22 @@
 
                     <button class = "book-card__btn" aria-label = "Add to bag">
                         ADD TO BAG
-                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon" />
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
                     </button>
                 </article>
 
                 <article class = "book-card">
                     <a href = "#" class = "book-card__link">
                         <div class = "book-card__images">
-                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image" />
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
 
                             <div class = "book-card__labels">
                                 <div class = "book-card__labels-left">
-                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" />
-                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" />
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
                                 </div>
                                 <div class = "book-card__labels-right">
-                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" />
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
                                 </div>
                             </div>
                         </div>
@@ -121,22 +152,22 @@
 
                     <button class = "book-card__btn" aria-label = "Add to bag">
                         ADD TO BAG
-                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon" />
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
                     </button>
                 </article>
 
                 <article class = "book-card">
                     <a href = "#" class = "book-card__link">
                         <div class = "book-card__images">
-                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image" />
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
 
                             <div class = "book-card__labels">
                                 <div class = "book-card__labels-left">
-                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" />
-                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" />
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
                                 </div>
                                 <div class = "book-card__labels-right">
-                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" />
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
                                 </div>
                             </div>
                         </div>
@@ -151,22 +182,22 @@
 
                     <button class = "book-card__btn" aria-label = "Add to bag">
                         ADD TO BAG
-                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon" />
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
                     </button>
                 </article>
 
                 <article class = "book-card">
                     <a href = "#" class = "book-card__link">
                         <div class = "book-card__images">
-                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image" />
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
 
                             <div class = "book-card__labels">
                                 <div class = "book-card__labels-left">
-                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" />
-                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" />
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
                                 </div>
                                 <div class = "book-card__labels-right">
-                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" />
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
                                 </div>
                             </div>
                         </div>
@@ -181,13 +212,13 @@
 
                     <button class = "book-card__btn" aria-label = "Add to bag">
                         ADD TO BAG
-                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon" />
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
                     </button>
                 </article>
             </div>
         </section>
 
-        <hr class = "section-divider" />
+        <hr class = "section-divider">
 
         <!-- Popular -->
 
@@ -198,15 +229,15 @@
                 <article class = "book-card">
                     <a href = "#" class = "book-card__link">
                         <div class = "book-card__images">
-                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image" />
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
 
                             <div class = "book-card__labels">
                                 <div class = "book-card__labels-left">
-                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" />
-                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" />
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
                                 </div>
                                 <div class = "book-card__labels-right">
-                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" />
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
                                 </div>
                             </div>
                         </div>
@@ -221,22 +252,22 @@
 
                     <button class = "book-card__btn" aria-label = "Add to bag">
                         ADD TO BAG
-                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon" />
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
                     </button>
                 </article>
 
                 <article class = "book-card">
                     <a href = "#" class = "book-card__link">
                         <div class = "book-card__images">
-                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image" />
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
 
                             <div class = "book-card__labels">
                                 <div class = "book-card__labels-left">
-                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" />
-                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" />
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
                                 </div>
                                 <div class = "book-card__labels-right">
-                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" />
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
                                 </div>
                             </div>
                         </div>
@@ -251,22 +282,22 @@
 
                     <button class = "book-card__btn" aria-label = "Add to bag">
                         ADD TO BAG
-                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon" />
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
                     </button>
                 </article>
 
                 <article class = "book-card">
                     <a href = "#" class = "book-card__link">
                         <div class = "book-card__images">
-                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image" />
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
 
                             <div class = "book-card__labels">
                                 <div class = "book-card__labels-left">
-                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" />
-                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" />
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
                                 </div>
                                 <div class = "book-card__labels-right">
-                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" />
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
                                 </div>
                             </div>
                         </div>
@@ -281,22 +312,22 @@
 
                     <button class = "book-card__btn" aria-label = "Add to bag">
                         ADD TO BAG
-                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon" />
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
                     </button>
                 </article>
 
                 <article class = "book-card">
                     <a href = "#" class = "book-card__link">
                         <div class = "book-card__images">
-                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image" />
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
 
                             <div class = "book-card__labels">
                                 <div class = "book-card__labels-left">
-                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" />
-                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" />
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
                                 </div>
                                 <div class = "book-card__labels-right">
-                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" />
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
                                 </div>
                             </div>
                         </div>
@@ -311,14 +342,14 @@
 
                     <button class = "book-card__btn" aria-label = "Add to bag">
                         ADD TO BAG
-                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon" />
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
                     </button>
                 </article>
             </div>
 
             <button class = "popular-books__btn">
                 To the catalogue
-                <img src = "img/icons/Arrow.svg" alt = "Countinue" />
+                <img src = "img/icons/Arrow.svg" alt = "Countinue">
             </button>
         </section>
      </main>
@@ -369,17 +400,19 @@
                 </div>
             </div>
 
-            <div class = "footer__payments">
-                <img src = "img/payments/visa-payment.svg" alt = "Visa" class = "footer__payment-icon" />
-                <img src = "img/payments/mastercard-payment.svg" alt = "Mastercard SecureCode" class = "footer__payment-icon" />
-                <img src = "img/payments/apple-payment.svg" alt = "Apple Pay" class = "footer__payment-icon" />
-                <img src = "img/payments/google-payment.svg" alt = "Google Pay" class = "footer__payment-icon" />
-            </div>
+            <div class = "footer__payments-btn">
+                <div class = "footer__payments">
+                    <img src = "img/payments/visa-payment.svg" alt = "Visa" class = "footer__payment-icon">
+                    <img src = "img/payments/mastercard-payment.svg" alt = "Mastercard SecureCode" class = "footer__payment-icon">
+                    <img src = "img/payments/apple-payment.svg" alt = "Apple Pay" class = "footer__payment-icon">
+                    <img src = "img/payments/google-payment.svg" alt = "Google Pay" class = "footer__payment-icon">
+                </div>
 
-            <button class = "footer__contact-btn" type = "button">Contact Us</button>
+                <button class = "footer__contact-btn" type = "button">Contact Us</button>
+            </div>
         </div>
 
-        <hr class = "section-divider" />
+        <hr class = "section-divider">
 
         <div class = "footer__bottom">
             <div class = "footer__optional-links">
@@ -387,12 +420,14 @@
                 <a href = "#" class = "footer__optional-link">Contract offer</a>
             </div>
 
-            <p class = "footer__copyright">© 2025. All rights reserved.</p>
-            <p class = "footer__notice">Copying of materials and content of the site is permitted only with the consent of the resource owner.</p>
+            <div class = "footer__authority">
+                <p class = "footer__copyright">© 2025. All rights reserved.</p>
+                <p class = "footer__notice">Copying of materials and content of the site is permitted only<br> with the consent of the resource owner.</p>
+            </div>
 
             <div class = "footer__dev">
-                <small>development and design:</small>
-                <img src = "img/tempus-logo.svg" alt = "Tempus logo" class = "footer__dev-logo" />
+                <span>development<br> and design:</span>
+                <img src = "img/tempus-logo.svg" alt = "Tempus logo" class = "footer__dev-logo">
             </div>
         </div>
      </footer>
