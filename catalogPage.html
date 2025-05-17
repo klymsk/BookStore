@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LITMIND</title>
+    <title>Catalog</title>
     <link rel = "preload" as = "font" href = "fonts/BlenderPro-Heavy.woff2" type = "font/woff2" crossorigin>
     <link rel = "preload" as = "font" href = "fonts/BlenderPro-Medium.woff2" type = "font/woff2" crossorigin>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel = "stylesheet" href = "css/styles.css">
+    <link rel = "stylesheet" href = "css/catalogStyles.css">
 </head>
 <body>
     <!-- Header -->
-     <header>
+    <header>
         <div class = "header__side-first">
             <div class = "header__buttons">
                 <button class = "header__menu-btn" aria-label = "Open menu">
@@ -51,49 +51,41 @@
         </div>
     </header>
 
-     <!-- Main -->
+    <!-- Main -->
 
-     <main>
-        <!-- Promo -->
-        <section class = "promo">
-            <div class = "promo__main">
-                <img src = "img/book-promo2.svg" class = "promo__main-img1" alt = "books-promo">
-
-                <div class = "promo__text">
-                    <span class = "promo__label">Litmind</span>
-                    <h1 class = "promo__title">EXCLUSIVE COOKBOOKS JUST FOR YOU<span class="promo__title-highlight"> – ONE PURCHASE, ONE OWNER!</span>
-                    </h1>
-                    <p class = "promo__description">Get a unique, AI-crafted cookbook, sold just once and instantly delivered to your inbox in docx and PDF.<br><span class="promo__description-highlight">Ready to publish on Amazon.</span>
-                    </p>
-                </div>
-
-                <img src = "img/books-promo.svg" class = "promo__main-img2" alt = "books-promo">
+    <main>
+        <div class="categories">
+            <div class="categories__category">
+                <p class="category-title">Diet cookbooks</p>
+                <img src="img/book-promo-category.svg" alt="Diet category" class="category-img" loading="lazy">
             </div>
-
-            <div class="promo__categories">
-                <div class="promo__category">
-                    <p class="promo__category-title">Diet cookbooks</p>
-                    <img src="img/book-promo-category.svg" alt="Diet category" class="promo__category-img" loading="lazy">
-                </div>
-                <div class="promo__category">
-                    <p class="promo__category-title">Kitchen Appliances cookbooks</p>
-                    <img src="img/book-promo-category.svg" alt="Kitchen appliances category" class="promo__category-img" loading="lazy">
-                </div>
-                <div class="promo__category">
-                    <p class="promo__category-title">Regional cookbooks</p>
-                    <img src="img/book-promo-category.svg" alt="Regional category" class="promo__category-img" loading="lazy">
-                </div>
-                <div class="promo__category">
-                    <p class="promo__category-title">Regional cookbooks</p>
-                    <img src="img/book-promo-category.svg" alt="Regional category" class="promo__category-img" loading="lazy">
-                </div>
+            <div class="categories__category">
+                <p class="category-title">Kitchen Appliances cookbooks</p>
+                <img src="img/book-promo-category.svg" alt="Kitchen appliances category" class="category-img" loading="lazy">
             </div>
-        </section>
+            <div class="categories__category">
+                <p class="category-title">Regional cookbooks</p>
+                <img src="img/book-promo-category.svg" alt="Regional category" class="category-img" loading="lazy">
+            </div>
+            <div class="categories__category">
+                <p class="category-title">Regional cookbooks</p>
+                <img src="img/book-promo-category.svg" alt="Regional category" class="category-img" loading="lazy">
+            </div>
+        </div>
 
-        <!-- Catalog -->
+        <div class = "catalog">
+            <h1>Diet Cookbooks</h1>
 
-        <section class = "books">
-            <h2 class = "books__title">Recent books added</h2>
+            <div class = "catalog__filters">
+                <button class = "catalog__filters-btn">
+                    Filters
+                    <img src = "#">
+                </button>
+                <button class = "catalog__filters-btn">
+                    Sorting
+                    <img src = "#">
+                </button>
+            </div>
 
             <div class = "books__grid">
                 <article class = "book-card">
@@ -112,7 +104,7 @@
                             </div>
                         </div>
 
-                        <h3 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h3>
+                        <h2 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h2>
                     </a>
 
                     <div class = "book-card__price">
@@ -142,7 +134,7 @@
                             </div>
                         </div>
 
-                        <h3 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h3>
+                        <h2 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h2>
                     </a>
 
                     <div class = "book-card__price">
@@ -172,7 +164,7 @@
                             </div>
                         </div>
 
-                        <h3 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h3>
+                        <h2 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h2>
                     </a>
 
                     <div class = "book-card__price">
@@ -202,7 +194,7 @@
                             </div>
                         </div>
 
-                        <h3 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h3>
+                        <h2 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h2>
                     </a>
 
                     <div class = "book-card__price">
@@ -216,147 +208,31 @@
                     </button>
                 </article>
             </div>
-        </section>
+        </div>
 
-        <hr class = "section-divider">
-
-        <!-- Popular -->
-
-        <section class = "popular-books">
-            <h2 class = "books__title">Are most likely to interest you</h2>
-
-            <div class = "books__grid">
-                <article class = "book-card">
-                    <a href = "#" class = "book-card__link">
-                        <div class = "book-card__images">
-                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
-
-                            <div class = "book-card__labels">
-                                <div class = "book-card__labels-left">
-                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
-                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
-                                </div>
-                                <div class = "book-card__labels-right">
-                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h3>
-                    </a>
-
-                    <div class = "book-card__price">
-                        <span class = "book-card__price--current">$40</span>
-                        <span class = "book-card__price--old">$50</span>
-                    </div>
-
-                    <button class = "book-card__btn" aria-label = "Add to bag">
-                        ADD TO BAG
-                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
-                    </button>
-                </article>
-
-                <article class = "book-card">
-                    <a href = "#" class = "book-card__link">
-                        <div class = "book-card__images">
-                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
-
-                            <div class = "book-card__labels">
-                                <div class = "book-card__labels-left">
-                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
-                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
-                                </div>
-                                <div class = "book-card__labels-right">
-                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h3>
-                    </a>
-
-                    <div class = "book-card__price">
-                        <span class = "book-card__price--current">$40</span>
-                        <span class = "book-card__price--old">$50</span>
-                    </div>
-
-                    <button class = "book-card__btn" aria-label = "Add to bag">
-                        ADD TO BAG
-                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
-                    </button>
-                </article>
-
-                <article class = "book-card">
-                    <a href = "#" class = "book-card__link">
-                        <div class = "book-card__images">
-                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
-
-                            <div class = "book-card__labels">
-                                <div class = "book-card__labels-left">
-                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
-                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
-                                </div>
-                                <div class = "book-card__labels-right">
-                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h3>
-                    </a>
-
-                    <div class = "book-card__price">
-                        <span class = "book-card__price--current">$40</span>
-                        <span class = "book-card__price--old">$50</span>
-                    </div>
-
-                    <button class = "book-card__btn" aria-label = "Add to bag">
-                        ADD TO BAG
-                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
-                    </button>
-                </article>
-
-                <article class = "book-card">
-                    <a href = "#" class = "book-card__link">
-                        <div class = "book-card__images">
-                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
-
-                            <div class = "book-card__labels">
-                                <div class = "book-card__labels-left">
-                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
-                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
-                                </div>
-                                <div class = "book-card__labels-right">
-                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h3>
-                    </a>
-
-                    <div class = "book-card__price">
-                        <span class = "book-card__price--current">$40</span>
-                        <span class = "book-card__price--old">$50</span>
-                    </div>
-
-                    <button class = "book-card__btn" aria-label = "Add to bag">
-                        ADD TO BAG
-                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
-                    </button>
-                </article>
+        <div class="pagination">
+            <div class="pagination__line">
+              <button class="pagination__arrow" aria-label="Previous page">←</button>
+          
+              <ul class="pagination__pages">
+                <li class="pagination__item pagination__item--active">1</li>
+                <li class="pagination__item">2</li>
+                <li class="pagination__item">3</li>
+                <li class="pagination__item">4</li>
+                <li class="pagination__item">5</li>
+              </ul>
+          
+              <button class="pagination__arrow" aria-label="Next page">→</button>
             </div>
+          
+            <button class="pagination__btn">View more</button>
+        </div>
 
-            <button class = "popular-books__btn">
-                To the catalogue
-                <img src = "img/icons/Arrow.svg" alt = "Countinue">
-            </button>
-        </section>
-     </main>
+        <span>Lorem ipsum</span>
 
-     <!-- Footer -->
+    </main>
 
-     <footer>
+    <footer>
         <div class = "footer__top">
             <div class = "footer__logo-lang">
                 <span class = "footer__title">Litmind</span>
@@ -430,6 +306,6 @@
                 <img src = "img/tempus-logo.svg" alt = "Tempus logo" class = "footer__dev-logo">
             </div>
         </div>
-     </footer>
+    </footer>
 </body>
 </html>
