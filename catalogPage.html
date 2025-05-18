@@ -29,7 +29,7 @@
                 </button>
             </div>
             
-            <a href = "#" class = "header__logo">Litmind</a>
+            <a href = "index.html" class = "header__logo">Litmind</a>
 
             <div class = "header__buttons">
                 <button class = "header__profile-btn">
@@ -55,35 +55,41 @@
 
     <main>
         <div class="categories">
-            <div class="categories__category">
+            <a href = "catalogPage.html" class="categories__category">
                 <p class="category-title">Diet cookbooks</p>
                 <img src="img/book-promo-category.svg" alt="Diet category" class="category-img" loading="lazy">
-            </div>
-            <div class="categories__category">
+            </a>
+            <a href = "catalogPage.html" class="categories__category">
                 <p class="category-title">Kitchen Appliances cookbooks</p>
                 <img src="img/book-promo-category.svg" alt="Kitchen appliances category" class="category-img" loading="lazy">
-            </div>
-            <div class="categories__category">
+            </a>
+            <a href = "catalogPage.html" class="categories__category">
                 <p class="category-title">Regional cookbooks</p>
                 <img src="img/book-promo-category.svg" alt="Regional category" class="category-img" loading="lazy">
-            </div>
-            <div class="categories__category">
+            </a>
+            <a href = "catalogPage.html" class="categories__category">
                 <p class="category-title">Regional cookbooks</p>
                 <img src="img/book-promo-category.svg" alt="Regional category" class="category-img" loading="lazy">
-            </div>
+            </a>
         </div>
 
         <div class = "catalog">
-            <h1>Diet Cookbooks</h1>
+            <h1 class = "catalog__title">Diet Cookbooks</h1>
 
             <div class = "catalog__filters">
                 <button class = "catalog__filters-btn">
                     Filters
-                    <img src = "#">
+                    <img src = "img/icons/Filter.svg" alt = "filter">
                 </button>
                 <button class = "catalog__filters-btn">
-                    Sorting
-                    <img src = "#">
+                    <select class="catalog__filters-select">
+                        <option value="sorting">Sorting</option>
+                        <option value="default">By default</option>
+                        <option value="novelty">Novelty</option>
+                        <option value="promotions">Promotions</option>
+                        <option value="increase">Price: increase</option>
+                        <option value="reduction">Price: reduction</option>
+                    </select>
                 </button>
             </div>
 
@@ -210,25 +216,29 @@
             </div>
         </div>
 
-        <div class="pagination">
-            <div class="pagination__line">
-              <button class="pagination__arrow" aria-label="Previous page">←</button>
+        <div class = "pagination">
+            <div class = "pagination__line">
+                <button class = "pagination__arrow" aria-label = "Previous page">
+                    <img src = "img/icons/arrow-left.svg" alt = "arrow-left">
+                </button>
           
-              <ul class="pagination__pages">
-                <li class="pagination__item pagination__item--active">1</li>
-                <li class="pagination__item">2</li>
-                <li class="pagination__item">3</li>
-                <li class="pagination__item">4</li>
-                <li class="pagination__item">5</li>
-              </ul>
+                <ul class = "pagination__pages">
+                    <li><button class = "pagination__item pagination__item--active" aria-current = "page">1</button></li>
+                    <li><button class = "pagination__item">2</button></li>
+                    <li><button class = "pagination__item">3</button></li>
+                    <li><button class = "pagination__item">4</button></li>
+                    <li><button class = "pagination__item">5</button></li>
+                </ul>
           
-              <button class="pagination__arrow" aria-label="Next page">→</button>
+                <button class="pagination__arrow" aria-label="Next page">
+                    <img src = "img/icons/arrow-right.svg" alt = "arrow-right">
+                </button>
             </div>
           
             <button class="pagination__btn">View more</button>
         </div>
 
-        <span>Lorem ipsum</span>
+        <span class = "description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada laoreet est. Fusce ligula dolor, feugiat consequat rhoncus et, euismod et velit. Sed rutrum, neque pharetra facilisis accumsan, sem purus accumsan turpis, ut ornare libero turpis eu ligula. Vivamus volutpat.</span>
 
     </main>
 

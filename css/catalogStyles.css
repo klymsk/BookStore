@@ -69,31 +69,6 @@ header {
     display: none;
 }
 
-@media (min-width: 1024px) {
-    .header__menu-btn {
-        display: none;
-    }
-
-    .header__catalogue-btn,
-    .header__search-btn,
-    .header__profile-btn,
-    .header__cart-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        padding: 20px 16px;
-        border-radius: 14px;
-        font-family: 'BlenderPro', sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-        border: none;
-        cursor: pointer;
-        white-space: nowrap;
-    }
-}
-
-
 .header__logo {
     font-family: 'BlenderPro', sans-serif;
     font-weight: 900;
@@ -110,21 +85,96 @@ header {
 }
 
 @media (min-width: 1024px) {
-    .header__profile-btn {
+    .header__menu-btn {
+        display: none;
+    }
+
+    .header__side-first {
         display: flex;
         justify-content: space-between;
-        background-color: rgba(255, 255, 255, 0.1);
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 0rem;
+    }
+
+    .header__buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .header__catalogue-btn,
+    .header__cart-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 16px 24px;
         border-radius: 14px;
-        padding: 1rem;
-        border: solid 1px var(--gray-color);
+        background: var(--yellow-color);
+        border: none;
+        font-family: 'BlenderPro', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--black-color);
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    }
+
+    .header__catalogue-btn:hover,
+    .header__cart-btn:hover,
+    .header__catalogue-btn:focus,
+    .header__cart-btn:focus {
+        background: #ffe600;
+        color: var(--black-color);
+        box-shadow: 0 2px 12px 0 rgba(244,240,21,0.15);
+        outline: none;
+    }
+
+    .header__search-btn,
+    .header__profile-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 16px 24px;
+        border-radius: 14px;
+        background: #fff;
+        color: var(--black-color);
+        border: 1px solid var(--gray-color);
+        font-family: 'BlenderPro', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
+    }
+
+    .header__search-btn:hover,
+    .header__profile-btn:hover,
+    .header__search-btn:focus,
+    .header__profile-btn:focus {
+        background: #f7f7f7;
+        border-color: var(--yellow-color);
+        outline: none;
+    }
+
+    .header__logo {
+        font-family: 'BlenderPro', sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        color: var(--black-color);
+        text-decoration: none;
+        margin: 0 2rem;
+        letter-spacing: 1px;
     }
 
     .header__cart-text {
         display: flex;
-        justify-content: space-between;
-        background-color: var(--yellow-color);
-        border-radius: 14px;
-        padding: 1rem;
+    }
+
+    .header__side-second {
+        display: none;
+    }
+
+    .header__second-catalogue-btn {
+        display: none;
     }
 }
 
@@ -142,12 +192,6 @@ header {
     font-weight: 700;
     font-size: 14px;
     color: var(--black-color);
-}
-
-@media (min-width: 1024px) {
-    .header__second-catalogue-btn {
-        display: none;
-    }
 }
 
 /* Main */
@@ -216,20 +260,45 @@ main {
     }
 }
 
-/* Catalog */
+/* Filters */
 
-.books {
+.catalog {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
-.books__title {
+.catalog__title {
     font-family: 'BlenderPro', sans-serif;
     font-weight: 500;
     font-size: 30px;
     color: var(--black-color);
 }
+
+.catalog__filters {
+    display: flex;
+    gap: 14px;
+}
+
+.catalog__filters-btn {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black-color);
+    border-radius: 14px;
+    padding: 16px 20px;
+    width: 100%;
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+
+.catalog__filters .catalog__filters-btn:nth-of-type(2) {
+    background-color: var(--gray-color);
+}
+
+
+/* Catalog */
 
 .books__grid {
     display: grid;
@@ -329,15 +398,69 @@ main {
 
 .pagination {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
 .pagination__line {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-color);
+    border-radius: 10px;
+    width: 40px;   
+    height: 40px; 
+    border: none;
+    cursor: pointer;
 }
 
 .pagination__pages {
     display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.pagination__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 40px;   
+    height: 40px; 
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black-color);
+}
+
+.pagination__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-color);
+    border-radius: 10px;
+    padding: 14px;
+    cursor: pointer;
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+
+/* Description */
+
+.description {
+    font-family: 'BlenderPro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--black-color);
 }
 
 /* Footer */
