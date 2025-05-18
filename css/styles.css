@@ -56,9 +56,14 @@ header {
 
 .header__menu-btn,
 .header__cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--yellow-color);
     border-radius: 10px;
     padding: 1rem;
+    width: 42px;
+    height: 42px;
 }
 
 .header__catalogue-btn {
