@@ -14,7 +14,7 @@
      <header>
         <div class = "header__side-first">
             <div class = "header__buttons">
-                <button class = "header__menu-btn" aria-label = "Open menu">
+                <button class = "header__menu-btn" id = "header__menu-btn" aria-label = "Open menu">
                     <img src = "img/icons/Menu.svg" alt = "menu">
                 </button>
 
@@ -43,17 +43,69 @@
             </div>
         </div>
 
-        <div class = "header__side-second">
-            <button class = "header__second-catalogue-btn">
+        <div class = "header__side-second" id = "header__side-second">
+            <button class = "header__second-catalogue-btn" id = "header__second-catalogue-btn" aria-label = "Open catalogue">
                 <img src = "img/icons/Catalog.svg" alt = "catalogue" aria-label = "Open catalogue">
                 <span class = "header__second-catalogue-text">Catalogue</span>
             </button>
         </div>
+
+        <!-- Nav -->
+
+        <nav class = "mobile-menu" id = "mobile-menu">
+            <div class = "mobile-menu__btns">
+                <button class = "mobile-menu__search-btn">
+                    <span class = "header__search-text">Search</span>
+                    <img src = "img/icons/Search.svg" alt = "catalogue" aria-label = "Search">
+                </button>
+                <button class = "mobile-menu__profile-btn" aria-label = "Open profile">
+                    <span class = "header__profile-text">Sign in</span>
+                    <img src = "img/icons/Profile.svg" alt = "catalogue">
+                </button>
+            </div>
+
+            <div class = "mobile-menu__catalogue" id>
+                <div class = "mobile-menu__catalogue-header">
+                    <span class = "mobile-menu__catalogue-title">Catalogue</span>
+                    <img src = "img/icons/Catalog.svg" alt = "catalogue" aria-label = "Open catalogue">
+                </div>
+                <ul class = "mobile-menu__catalogue-list">
+                    <li><a href = "#" class = "mobile-menu__catalogue-link">Diet Cookbooks</a></li>
+                    <li><a href = "#" class = "mobile-menu__catalogue-link">Kitchen Appliances Cookbooks</a></li>
+                    <li><a href = "#" class = "mobile-menu__catalogue-link">Regional Cookbooks</a></li>
+                    <li><a href = "#" class = "mobile-menu__catalogue-link">Others Cookbooks</a></li>
+                </ul>
+            </div>
+
+            <div class = "mobile-menu__contacts">
+                <ul class = "mobile-menu__contacts-list">
+                    <li><a href = "#" class = "mobile-menu__contacts-link">Telegram</a></li>
+                    <li><a href = "#" class = "mobile-menu__contacts-link">WhatsApp</a></li>
+                    <li><a href = "#" class = "mobile-menu__contacts-link">Viber</a></li>
+                </ul>
+                <a href="tel:+380931234567" class="mobile-menu__text">+38 093 123 45 67</a>
+            </div>
+
+            <div class = "mobile-menu__lang">
+                    <button class = "footer__lang-btn">En</button>
+                    <button class = "footer__lang-btn">Ua</button>
+            </div>
+        </nav>
+
+        <div class = "mobile-menu__catalogue" id = "mobile-menu__catalogue">
+            <ul class = "mobile-menu__catalogue-list">
+                <li><a href = "#" class = "mobile-menu__catalogue-link">Diet Cookbooks</a></li>
+                <li><a href = "#" class = "mobile-menu__catalogue-link">Kitchen Appliances Cookbooks</a></li>
+                <li><a href = "#" class = "mobile-menu__catalogue-link">Regional Cookbooks</a></li>
+                <li><a href = "#" class = "mobile-menu__catalogue-link">Others Cookbooks</a></li>
+            </ul>
+        </div>
     </header>
+    
 
      <!-- Main -->
 
-     <main>
+    <main>
         <!-- Promo -->
         <section class = "promo">
             <div class = "promo__main">
@@ -433,5 +485,8 @@
             </div>
         </div>
      </footer>
+
+    <script src = "js/script.js"></script>
+    
 </body>
 </html>
