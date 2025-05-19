@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuBtn = document.getElementById("header__menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
+    const body = document.body;
 
     const catalogBtn = document.getElementById("header__side-second");
 
@@ -11,8 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.classList.toggle("active");
         if (mobileMenu.classList.contains("active")) {
             catalogBtn.style.display = "none";
+            body.classList.add('no-scroll');
         } else {
             catalogBtn.style.display = "";
+            body.classList.remove('no-scroll');
         }
     });
 
