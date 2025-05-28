@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const catalogueBtn = document.getElementById("header__second-catalogue-btn");
     const catalogueMenu = document.getElementById("mobile-menu__catalogue");
 
+    const header = document.querySelector("header");
+
     menuBtn.addEventListener("click", function() {
         mobileMenu.classList.toggle("active");
         if (mobileMenu.classList.contains("active")) {
@@ -21,5 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     catalogueBtn.addEventListener("click", function() {
         catalogueMenu.classList.toggle("active");
+        header.classList.toggle("active");
     });
 });
