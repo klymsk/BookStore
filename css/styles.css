@@ -985,6 +985,8 @@ main {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch; 
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 @media (min-width: 1024px) {
