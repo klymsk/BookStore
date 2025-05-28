@@ -33,12 +33,12 @@
 
             <div class = "header__buttons">
                 <button class = "header__profile-btn" aria-label = "Open profile">
-                    <img src = "img/icons/Profile.svg" alt = "catalogue" loading = "lazy">
                     <span class = "header__profile-text">Sign in</span>
+                    <img src = "img/icons/Profile.svg" alt = "catalogue" loading = "lazy">
                 </button>
                 <button class = "header__cart-btn" aria-label = "Open cart">
-                    <img src = "img/icons/Cart.svg" class = "header__cart-icon" alt = "cart" loading = "lazy">
                     <span class = "header__cart-text">Cart</span>
+                    <img src = "img/icons/Cart.svg" class = "header__cart-icon" alt = "cart" loading = "lazy">
                 </button>
             </div>
         </div>
@@ -109,17 +109,19 @@
         <!-- Promo -->
         <section class = "promo">
             <div class = "promo__main">
-                <img src = "img/book-promo2.svg" class = "promo__main-img1" width="400" height="300" alt = "books-promo">
+                <img src = "img/book-promo2.svg" class = "promo__main-img1" alt = "books-promo">
 
                 <div class = "promo__text">
                     <span class = "promo__label">Litmind</span>
                     <div class = "promo__title">
                         <span class = "promo__title-text">Exclusive Cookbooks</span>
-                        <span class = "promo__title-text">Just for You – One</span>
+                        <span class = "promo__title-text">Just for You <img src="img/title.gif" alt="decoration" class="promo__gif"> <span class = "promo__title-highlight">– One</span></span>
                         <span class = "promo__title-highlight">Purchase, One Owner!</span>
                     </div>
-                    <p class = "promo__description">Get a unique, AI-crafted cookbook, sold just once and instantly delivered to your inbox in docx and PDF.<br><span class="promo__description-highlight">Ready to publish on Amazon.</span>
-                    </p>
+                    <div class = "promo__text-label">
+                        <p class = "promo__description">Get a unique, AI-crafted cookbook, sold just once and <br> instantly delivered to your inbox in docx and PDF.</p>
+                        <p class="promo__description-highlight">Ready to publish on Amazon.</p>
+                    </div>
                 </div>
 
                 <img src = "img/books-promo1.png" class = "promo__main-img2" alt = "books-promo">
@@ -127,19 +129,31 @@
 
             <div class="promo__categories">
                 <a href = "#" class="promo__category">
-                    <p class="promo__category-title">Diet cookbooks</p>
+                    <div class = "promo_category-info">
+                        <img src = "img/icons/Arrow-catalog.svg" alt = "Arrow" class = "promo__category-arrow" loading="lazy">
+                        <p class="promo__category-title">Diet cookbooks</p>
+                    </div>
                     <img src="img/book-promo-category.svg" alt="Diet category" class="promo__category-img">
                 </a>
                 <a href = "#" class="promo__category">
-                    <p class="promo__category-title">Kitchen Appliances cookbooks</p>
+                    <div class = "promo_category-info">
+                        <img src = "img/icons/Arrow-catalog.svg" alt = "Arrow" class = "promo__category-arrow" loading="lazy">
+                        <p class="promo__category-title">Kitchen Appliances cookbooks</p>
+                    </div>
                     <img src="img/book-promo-category.svg" alt="Kitchen appliances category" class="promo__category-img">
                 </a>
                 <a href = "#" class="promo__category">
-                    <p class="promo__category-title">Regional cookbooks</p>
+                    <div class = "promo_category-info">
+                        <img src = "img/icons/Arrow-catalog.svg" alt = "Arrow" class = "promo__category-arrow" loading="lazy">
+                        <p class="promo__category-title">Regional cookbooks</p>
+                    </div>
                     <img src="img/book-promo-category.svg" alt="Regional category" class="promo__category-img">
                 </a>
                 <a href = "#" class="promo__category">
-                    <p class="promo__category-title">Regional cookbooks</p>
+                    <div class = "promo_category-info">
+                        <img src = "img/icons/Arrow-catalog.svg" alt = "Arrow" class = "promo__category-arrow" loading="lazy">
+                        <p class="promo__category-title">Regional cookbooks</p>
+                    </div>
                     <img src="img/book-promo-category.svg" alt="Regional category" class="promo__category-img">
                 </a>
             </div>
@@ -270,6 +284,36 @@
                         <img src = "img/icons/CartCatalog.svg" alt = "bag-button" class = "book-card__btn-icon" loading = "lazy">
                     </button>
                 </article>
+
+                <article class = "book-card">
+                    <a href = "#" class = "book-card__link">
+                        <div class = "book-card__images">
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image" loading = "lazy">
+
+                            <div class = "book-card__labels">
+                                <div class = "book-card__labels-left">
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-img" alt = "new-label" loading = "lazy">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-img" alt = "offer-label" loading = "lazy">
+                                </div>
+                                <div class = "book-card__labels-right">
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-img" alt = "discount-label" loading = "lazy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h3>
+                    </a>
+
+                    <div class = "book-card__price">
+                        <span class = "book-card__price--current">$40</span>
+                        <span class = "book-card__price--old">$50</span>
+                    </div>
+
+                    <button class = "book-card__btn" aria-label = "Add to bag">
+                        ADD TO BAG
+                        <img src = "img/icons/CartCatalog.svg" alt = "bag-button" class = "book-card__btn-icon" loading = "lazy">
+                    </button>
+                </article>
             </div>
         </section>
 
@@ -278,9 +322,45 @@
         <!-- Popular -->
 
         <section class = "popular-books">
-            <h2 class = "books__title">Are most likely to interest you</h2>
+            <div class = "books__header">
+                <h2 class = "books__title">Are most likely to interest you</h2>
+                <button class = "popular-books__btn-header">
+                    To the catalogue
+                    <img src = "img/icons/Arrow-btn.svg" alt = "arrow-btn">
+                </button>
+            </div>
 
             <div class = "books__grid">
+                <article class = "book-card">
+                    <a href = "#" class = "book-card__link">
+                        <div class = "book-card__images">
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image" loading = "lazy">
+
+                            <div class = "book-card__labels">
+                                <div class = "book-card__labels-left">
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-img" alt = "new-label" loading = "lazy">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-img" alt = "offer-label" loading = "lazy">
+                                </div>
+                                <div class = "book-card__labels-right">
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-img" alt = "discount-label" loading = "lazy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h3>
+                    </a>
+
+                    <div class = "book-card__price">
+                        <span class = "book-card__price--current">$40</span>
+                        <span class = "book-card__price--old">$50</span>
+                    </div>
+
+                    <button class = "book-card__btn" aria-label = "Add to bag">
+                        ADD TO BAG
+                        <img src = "img/icons/CartCatalog.svg" alt = "bag-button" class = "book-card__btn-icon" loading = "lazy">
+                    </button>
+                </article>
+
                 <article class = "book-card">
                     <a href = "#" class = "book-card__link">
                         <div class = "book-card__images">
