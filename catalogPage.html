@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel = "preload" as = "font" href = "fonts/BlenderPro-Heavy.woff2" type = "font/woff2" crossorigin>
+    <link rel = "preload" as = "font" href = "fonts/BlenderPro-Medium.woff2" type = "font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel = "stylesheet" href = "css/catalogStyles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class = "header__side-first">
+            <div class = "header__buttons">
+                <button class = "header__menu-btn" id = "header__menu-btn" aria-label = "Open menu">
+                    <img src = "img/icons/Menu.svg" alt = "menu">
+                </button>
+
+                <button class = "header__catalogue-btn">
+                    <img src = "img/icons/Catalog.svg" alt = "catalogue" aria-label = "Open catalogue">
+                    <span class = "header__catalogue-text">Catalogue</span>
+                </button>
+
+                <button class = "header__search-btn">
+                    <img src = "img/icons/Search.svg" alt = "catalogue" aria-label = "Search">
+                    <span class = "header__search-text">Search</span>
+                </button>
+            </div>
+            
+            <a href = "index.html" class = "header__logo">Litmind</a>
+
+            <div class = "header__buttons">
+                <button class = "header__profile-btn" aria-label = "Open profile">
+                    <img src = "img/icons/Profile.svg" alt = "catalogue">
+                    <span class = "header__profile-text">Sign in</span>
+                </button>
+                <button class = "header__cart-btn" aria-label = "Cart" aria-label = "Open cart">
+                    <img src = "img/icons/Cart.svg" alt = "cart">
+                    <span class = "header__cart-text">Cart</span>
+                </button>
+            </div>
+        </div>
+
+        <div class = "header__side-second" id = "header__side-second">
+            <button class = "header__second-catalogue-btn" id = "header__second-catalogue-btn" aria-label = "Open catalogue">
+                <img src = "img/icons/Catalog.svg" alt = "catalogue" aria-label = "Open catalogue">
+                <span class = "header__second-catalogue-text">Catalogue</span>
+            </button>
+        </div>
+
+        <!-- Nav -->
+
+        <nav class = "mobile-menu" id = "mobile-menu">
+            <div class = "mobile-menu__btns">
+                <button class = "mobile-menu__search-btn">
+                    <span class = "header__search-text">Search</span>
+                    <img src = "img/icons/Search.svg" alt = "catalogue" aria-label = "Search">
+                </button>
+                <button class = "mobile-menu__profile-btn" aria-label = "Open profile">
+                    <span class = "header__profile-text">Sign in</span>
+                    <img src = "img/icons/Profile.svg" alt = "catalogue">
+                </button>
+            </div>
+
+            <div class = "mobile-menu__catalogue" id>
+                <div class = "mobile-menu__catalogue-header">
+                    <span class = "mobile-menu__catalogue-title">Catalogue</span>
+                    <img src = "img/icons/Catalog.svg" alt = "catalogue" aria-label = "Open catalogue">
+                </div>
+                <ul class = "mobile-menu__catalogue-list">
+                    <li><a href = "#" class = "mobile-menu__catalogue-link">Diet Cookbooks</a></li>
+                    <li><a href = "#" class = "mobile-menu__catalogue-link">Kitchen Appliances Cookbooks</a></li>
+                    <li><a href = "#" class = "mobile-menu__catalogue-link">Regional Cookbooks</a></li>
+                    <li><a href = "#" class = "mobile-menu__catalogue-link">Others Cookbooks</a></li>
+                </ul>
+            </div>
+
+            <div class = "mobile-menu__contacts">
+                <ul class = "mobile-menu__contacts-list">
+                    <li><a href = "#" class = "mobile-menu__contacts-link">Telegram</a></li>
+                    <li><a href = "#" class = "mobile-menu__contacts-link">WhatsApp</a></li>
+                    <li><a href = "#" class = "mobile-menu__contacts-link">Viber</a></li>
+                </ul>
+                <a href="tel:+380931234567" class="mobile-menu__text">+38 093 123 45 67</a>
+            </div>
+
+            <div class = "mobile-menu__lang">
+                    <button class = "footer__lang-btn">En</button>
+                    <button class = "footer__lang-btn">Ua</button>
+            </div>
+        </nav>
+
+        <div class = "mobile-menu__catalogue" id = "mobile-menu__catalogue">
+            <ul class = "mobile-menu__catalogue-list">
+                <li><a href = "#" class = "mobile-menu__catalogue-link">Diet Cookbooks</a></li>
+                <li><a href = "#" class = "mobile-menu__catalogue-link">Kitchen Appliances Cookbooks</a></li>
+                <li><a href = "#" class = "mobile-menu__catalogue-link">Regional Cookbooks</a></li>
+                <li><a href = "#" class = "mobile-menu__catalogue-link">Others Cookbooks</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+        <div class="categories">
+            <a href = "catalogPage.html" class="categories__category">
+                <p class="category-title">Diet cookbooks</p>
+                <img src="img/book-promo-category.svg" alt="Diet category" class="category-img" loading="lazy">
+            </a>
+            <a href = "catalogPage.html" class="categories__category">
+                <p class="category-title">Kitchen Appliances cookbooks</p>
+                <img src="img/book-promo-category.svg" alt="Kitchen appliances category" class="category-img" loading="lazy">
+            </a>
+            <a href = "catalogPage.html" class="categories__category">
+                <p class="category-title">Regional cookbooks</p>
+                <img src="img/book-promo-category.svg" alt="Regional category" class="category-img" loading="lazy">
+            </a>
+            <a href = "catalogPage.html" class="categories__category">
+                <p class="category-title">Regional cookbooks</p>
+                <img src="img/book-promo-category.svg" alt="Regional category" class="category-img" loading="lazy">
+            </a>
+        </div>
+
+        <div class = "catalog">
+            <h1 class = "catalog__title">Diet Cookbooks</h1>
+
+            <div class = "catalog__filter-sorting">
+                <div class = "catalog-filters">
+                    <button class = "catalog__filters-btn">
+                        Filters
+                        <img src = "img/icons/Filter.svg" alt = "filter">
+                    </button>
+
+                    <div class = "catalog__filters-optional">
+                        <div class = "filters__optional">
+                            <span>option</span>
+                        </div>
+                        <div class = "filters__optional">
+                            <span>option</span>
+                        </div>
+                    </div>
+                </div>
+                <button class = "catalog__filters-btn">
+                    <select class="catalog__filters-select">
+                        <option value="sorting">Sorting</option>
+                        <option value="default">By default</option>
+                        <option value="novelty">Novelty</option>
+                        <option value="promotions">Promotions</option>
+                        <option value="increase">Price: increase</option>
+                        <option value="reduction">Price: reduction</option>
+                    </select>
+                </button>
+            </div>
+
+            <div class = "books__grid">
+                <article class = "book-card">
+                    <a href = "#" class = "book-card__link">
+                        <div class = "book-card__images">
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
+
+                            <div class = "book-card__labels">
+                                <div class = "book-card__labels-left">
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
+                                </div>
+                                <div class = "book-card__labels-right">
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h2>
+                    </a>
+
+                    <div class = "book-card__price">
+                        <span class = "book-card__price--current">$40</span>
+                        <span class = "book-card__price--old">$50</span>
+                    </div>
+
+                    <button class = "book-card__btn" aria-label = "Add to bag">
+                        ADD TO BAG
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
+                    </button>
+                </article>
+
+                <article class = "book-card">
+                    <a href = "#" class = "book-card__link">
+                        <div class = "book-card__images">
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
+
+                            <div class = "book-card__labels">
+                                <div class = "book-card__labels-left">
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
+                                </div>
+                                <div class = "book-card__labels-right">
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h2>
+                    </a>
+
+                    <div class = "book-card__price">
+                        <span class = "book-card__price--current">$40</span>
+                        <span class = "book-card__price--old">$50</span>
+                    </div>
+
+                    <button class = "book-card__btn" aria-label = "Add to bag">
+                        ADD TO BAG
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
+                    </button>
+                </article>
+
+                <article class = "book-card">
+                    <a href = "#" class = "book-card__link">
+                        <div class = "book-card__images">
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
+
+                            <div class = "book-card__labels">
+                                <div class = "book-card__labels-left">
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
+                                </div>
+                                <div class = "book-card__labels-right">
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h2>
+                    </a>
+
+                    <div class = "book-card__price">
+                        <span class = "book-card__price--current">$40</span>
+                        <span class = "book-card__price--old">$50</span>
+                    </div>
+
+                    <button class = "book-card__btn" aria-label = "Add to bag">
+                        ADD TO BAG
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
+                    </button>
+                </article>
+
+                <article class = "book-card">
+                    <a href = "#" class = "book-card__link">
+                        <div class = "book-card__images">
+                            <img src = "img/book-catalog.svg" alt = "book img" class = "book-card__image">
+
+                            <div class = "book-card__labels">
+                                <div class = "book-card__labels-left">
+                                    <img src = "img/catalog-labels/new-label.svg" class = "book-card__labels-new" alt = "new-label">
+                                    <img src = "img/catalog-labels/offer-label.svg" class = "book-card__labels-offer" alt = "offer-label">
+                                </div>
+                                <div class = "book-card__labels-right">
+                                    <img src = "img/catalog-labels/discount-label.svg" class = "book-card__labels-discount" alt = "discount-label">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class = "book-card__title">Keto Diet Cookbook: 100 Easy Low-Carb Recipes (US Edition)</h2>
+                    </a>
+
+                    <div class = "book-card__price">
+                        <span class = "book-card__price--current">$40</span>
+                        <span class = "book-card__price--old">$50</span>
+                    </div>
+
+                    <button class = "book-card__btn" aria-label = "Add to bag">
+                        ADD TO BAG
+                        <img src = "img/icons/Cart.svg" alt = "bag-button" class = "book-card__btn-icon">
+                    </button>
+                </article>
+            </div>
+        </div>
+
+        <div class = "pagination">
+            <div class = "pagination__line">
+                <button class = "pagination__arrow" aria-label = "Previous page">
+                    <img src = "img/icons/arrow-left.svg" alt = "arrow-left">
+                </button>
+          
+                <ul class = "pagination__pages">
+                    <li><button class = "pagination__item pagination__item--active" aria-current = "page">1</button></li>
+                    <li><button class = "pagination__item">2</button></li>
+                    <li><button class = "pagination__item">3</button></li>
+                    <li><button class = "pagination__item">4</button></li>
+                    <li><button class = "pagination__item">5</button></li>
+                </ul>
+          
+                <button class="pagination__arrow" aria-label="Next page">
+                    <img src = "img/icons/arrow-right.svg" alt = "arrow-right">
+                </button>
+            </div>
+          
+            <button class="pagination__btn">View more</button>
+        </div>
+
+        <span class = "description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada laoreet est. Fusce ligula dolor, feugiat consequat rhoncus et, euismod et velit. Sed rutrum, neque pharetra facilisis accumsan, sem purus accumsan turpis, ut ornare libero turpis eu ligula. Vivamus volutpat.</span>
+
+    </main>
+
+    <footer>
+        <div class = "footer__top">
+            <div class = "footer__logo-lang">
+                <span class = "footer__title">Litmind</span>
+                <div class = "footer__lang-switch">
+                    <button class = "footer__lang-btn">En</button>
+                    <button class = "footer__lang-btn">Ua</button>
+                </div>
+            </div>
+
+            <div class = "footer__columns">
+                <div class = "footer__column">
+                    <h3 class = "footer__heading">Catalogue</h3>
+                    <ul class = "footer__list">
+                        <li><a href = "#" class = "footer__link">Diet Cookbooks</a></li>
+                        <li><a href = "#" class = "footer__link">Kitchen Appliances Cookbooks</a></li>
+                        <li><a href = "#" class = "footer__link">Regional Cookbooks</a></li>
+                        <li><a href = "#" class = "footer__link">Others Cookbooks</a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer__column">
+                    <h3 class = "footer__heading">Information</h3>
+                    <ul class = "footer__list">
+                        <li><a href = "#" class = "footer__link">Warranty</a></li>
+                        <li><a href = "#" class = "footer__link">Payment</a></li>
+                        <li><a href = "#" class = "footer__link">Contacts</a></li>
+                        <li><a href = "#" class = "footer__link">Refund policy</a></li>
+                        <li><a href = "#" class = "footer__link">Return policy</a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer__column">
+                    <h3 class = "footer__heading">Contacts</h3>
+                    <ul class = "footer__list">
+                        <li><a href = "#" class = "footer__link">WhatsApp</a></li>
+                        <li><a href = "#" class = "footer__link">Telegram</a></li>
+                        <li><a href = "#" class = "footer__link">Viber</a></li>
+                    </ul>
+                    <p class = "footer__text">+38 093 123 45 67</p>
+                    <p class = "footer__text">email@email.com</p>
+                </div>
+            </div>
+
+            <div class = "footer__payments-btn">
+                <div class = "footer__payments">
+                    <img src = "img/payments/visa-payment.svg" alt = "Visa" class = "footer__payment-icon">
+                    <img src = "img/payments/mastercard-payment.svg" alt = "Mastercard SecureCode" class = "footer__payment-icon">
+                    <img src = "img/payments/apple-payment.svg" alt = "Apple Pay" class = "footer__payment-icon">
+                    <img src = "img/payments/google-payment.svg" alt = "Google Pay" class = "footer__payment-icon">
+                </div>
+
+                <button class = "footer__contact-btn" type = "button">Contact Us</button>
+            </div>
+        </div>
+
+        <hr class = "section-divider">
+
+        <div class = "footer__bottom">
+            <div class = "footer__optional-links">
+                <a href = "#" class = "footer__optional-link">Privacy policy</a>
+                <a href = "#" class = "footer__optional-link">Contract offer</a>
+            </div>
+
+            <div class = "footer__authority">
+                <p class = "footer__copyright">© 2025. All rights reserved.</p>
+                <p class = "footer__notice">Copying of materials and content of the site is permitted only<br> with the consent of the resource owner.</p>
+            </div>
+
+            <div class = "footer__dev">
+                <span>development<br> and design:</span>
+                <img src = "img/tempus-logo.svg" alt = "Tempus logo" class = "footer__dev-logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src = "js/script.js"></script>
+
+</body>
+</html>

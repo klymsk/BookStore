@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const header = document.querySelector("header");
 
+    document.body.classList.add('preload');
+
     menuBtn.addEventListener("click", function() {
         mobileMenu.classList.toggle("active");
         if (mobileMenu.classList.contains("active")) {
@@ -24,5 +26,20 @@ document.addEventListener('DOMContentLoaded', function() {
     catalogueBtn.addEventListener("click", function() {
         catalogueMenu.classList.toggle("active");
         header.classList.toggle("active");
+    });
+
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.style.opacity = '0';
+            preloader.style.pointerEvents = 'none';
+            preloader.style.transition = 'opacity 0.5s ease';
+            document.body.classList.remove('preload');
+            setTimeout(() => {
+            preloader.remove();
+            }, 500);
+        }
+        }, 2000); 
     });
 });
