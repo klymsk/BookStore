@@ -726,7 +726,7 @@ main {
     }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1600px) {
     .promo__title-text {
         display: flex;
         flex-direction: row;
@@ -762,7 +762,7 @@ main {
     }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1600px) {
     .promo__gif {
         display: flex;
         width: 61px;
@@ -826,7 +826,7 @@ main {
     }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1600px) {
     .promo__title-highlight {
         font-family: 'BlenderPro', sans-serif;
         font-weight: 500;
@@ -910,7 +910,7 @@ main {
     }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1600px) {
     .promo__description {
         font-family: 'BlenderPro', sans-serif;
         font-weight: 400;
@@ -966,7 +966,7 @@ main {
     }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1600px) {
     .promo__description-highlight {
         font-family: 'BlenderPro', sans-serif;
         font-weight: 500;
@@ -1455,6 +1455,18 @@ main {
     color: var(--black-color);
 }
 
+@media (min-width: 200px) {
+    .popular-books__btn {
+        width: 70%;
+    }
+}
+
+@media (min-width: 450px) {
+    .popular-books__btn {
+        width: 350px;
+    }
+}
+
 @media (min-width: 1024px) {
     .popular-books__btn {
         display: none;
@@ -1656,9 +1668,22 @@ footer {
 }
 
 .footer__payments {
-  display: flex;
-  gap: 24px;
-  align-items: center;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+
+@media (min-width: 300px) {
+    .footer__payments img {
+        width: 20%;
+    }
+}
+
+@media (min-width: 450px) {
+    .footer__payments img {
+        width: auto;
+    }
 }
 
 @media (min-width: 1024px) {
